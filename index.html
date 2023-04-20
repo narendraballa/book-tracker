@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <script src="script.js"></script>
-    <h1 id="author"></h1>
+    <div class="container mt-5 mb-5">
+      <h1 class="text-center">Book Tracker</h1>
+    </div>
+    <div id="cards" class="container-fluid">
+      <div class="card mb-3" style="max-width: 650px">
+        <!-- class="container-fluid" -->
+        <div class="row g-1">
+          <div class="col-md-4">
+            <img
+              src="https://www.readriordan.com/wp-content/uploads/2022/02/Lightning-Thief-flat-cover.png"
+              class="img-fluid rounded-start pt-4"
+              alt="Book Cover"
+            />
+            <!-- img-fluid rounded-start -->
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Percy Jackson and the Olympians</h5>
+              <!-- <h6 class="card-title">Author:<em>Rick Riordan</em></h6> -->
+              <p class="card-title"><strong>Author:</strong> Rick Riordan</p>
+              <p class="card-text">
+                Percy Jackson & the Olympians is a series of five fantasy novels
+                written by American author Rick Riordan, and the first book
+                series in the Camp Half-Blood Chronicles.
+              </p>
+              <p><strong>Rating:</strong> 4.5</p>
+              <a href="#" class="btn btn-outline-danger">Add</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script2.js"></script>
   </body>
 </html>

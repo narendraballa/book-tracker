@@ -1,12 +1,23 @@
 {
-  "name": "book",
+  "name": "book-tracker",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "A simple web based book tracker",
+  "main": "sample.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node sample.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TalkingTeddy/book-tracker.git"
+  },
+  "keywords": [
+    "book",
+    "tracker"
+  ],
+  "author": "F & A",
   "license": "ISC",
-  "type": "module"
+  "bugs": {
+    "url": "https://github.com/TalkingTeddy/book-tracker/issues"
+  },
+  "homepage": "https://github.com/TalkingTeddy/book-tracker#readme"
 }
