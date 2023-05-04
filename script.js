@@ -15,4 +15,7 @@ let abc  = fetch(options.url)
         fs.writeFileSync('logs.json', JSON.stringify(jsonData))
     })
 
-console.log(abc)
+
+let response = fs.readFileSync('logs.json').toString()
+
+console.log(response)
