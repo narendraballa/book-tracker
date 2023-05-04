@@ -1,3 +1,4 @@
+'use strict'
 import fs from 'fs'
 
 const options = {
@@ -5,15 +6,16 @@ const options = {
     url : "https://www.googleapis.com/books/v1/volumes?q=The+Subtle+Art+of+Not+Giving+a+F*ck"
 }
 
-let requestValue = false
 
-fetch(options.url)
+let abc  = fetch(options.url)
     .then((response) => {
         return response.json()
     })
     .then((jsonData) => {     
         fs.writeFileSync('logs.json', JSON.stringify(jsonData))
-        requestValue = jsonData
     })
-    
-    console.log(requestValue)
+
+
+let response = fs.readFileSync('logs.json').toString()
+
+console.log(response)
